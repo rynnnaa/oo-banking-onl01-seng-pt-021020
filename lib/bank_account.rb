@@ -18,8 +18,8 @@ class BankAccount
   end
   
   def valid?
-    if @status != "open" && @balance < 0
-      return FALSE
+    if @status != 'open' && @balance < 0
+      return false
     else 
       return true
     end
