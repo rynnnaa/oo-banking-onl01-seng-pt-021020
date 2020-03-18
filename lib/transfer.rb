@@ -1,10 +1,10 @@
 class Transfer
   attr_accessor
-  attr_reader :sender, :other_name, :transfer
+  attr_reader :sender, :receiver, :transfer
   
-  def initialize(sender, other_name, transfer)
+  def initialize(sender, receiver, transfer)
     @sender = sender
-    @other_name = other_name
+    @receiver = receiver
     @transfer 
   end
 end
