@@ -18,10 +18,6 @@ class BankAccount
   end
   
   def valid?
-    if @status && @balance > 0
-      TRUE
-    else
-      false
-    end
+    @status && @balance > 0
   end
 end
